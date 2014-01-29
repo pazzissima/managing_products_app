@@ -1,0 +1,10 @@
+<h4><%= @product.name %> </h4>
+
+<h5>This product belongs to the following categories:</h5>
+<ul>
+	<% @categories.each do |c| %>
+	<li>
+		<%= c.name %>
+	</li>
+	<% end %>
+</ul>
